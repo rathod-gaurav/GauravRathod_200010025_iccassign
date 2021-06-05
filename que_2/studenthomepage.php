@@ -44,8 +44,8 @@
                             <h6 class="card-subtitle mb-2 text-muted"><?php echo htmlspecialchars($job['job_description']); ?></h6>
                             <h6 class="card-subtitle mt-2 text-muted">Requirements: </h6><p class="card-text"><?php echo htmlspecialchars($job['job_requirements']); ?></p>
                         </div>
-                        <div class="card-footer">
-                            <a href="student/application.php" class="card-link">Apply Now.</a>
+                        <div class="card-footer card-action">
+                            <a href="student/application.php?id=<?php echo $job['id']; ?>" class="card-link">Apply Now.</a>
                         </div>
                     </div>
                 <?php } ?>

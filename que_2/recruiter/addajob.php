@@ -61,7 +61,7 @@
             <div class="col-10 col-md-3 order-md-first">
                 <div class="card mt-4">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a class="nav-link" href="#">My Profile</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="recruiterProfile.php">My Profile</a></li>
                         <li class="list-group-item"><a class="nav-link" href="../recruiterhomepage.php">Home</a></li>
                         <li class="list-group-item"><a class="nav-link" href="#">Applicants' List</a></li>
                         <li class="list-group-item"><a class="nav-link" href="#">Updates</a></li>

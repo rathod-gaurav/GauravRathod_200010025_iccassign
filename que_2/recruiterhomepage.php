@@ -42,7 +42,7 @@
                             <h6 class="card-subtitle mt-2 text-muted">Requirements: </h6><p class="card-text"><?php echo htmlspecialchars($job['job_requirements']); ?></p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="card-link">View Applicants' list.</a>
+                            <a href="recruiter/jobresponses.php?id=<?php echo $job['id']; ?>" class="card-link">View Applicants' list.</a>
                         </div>
                     </div>
                 <?php } ?>
@@ -51,7 +51,7 @@
             <div class="col-10 col-md-3 order-md-first">
                 <div class="card mt-4">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a class="nav-link" href="#">My Profile</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="recruiter/recruiterProfile.php">My Profile</a></li>
                         <li class="list-group-item"><a class="nav-link" href="recruiter/addajob.php">Add a Job</a></li>
                         <li class="list-group-item"><a class="nav-link" href="#">Applicants' List</a></li>
                         <li class="list-group-item"><a class="nav-link" href="#">Updates</a></li>
