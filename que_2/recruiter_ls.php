@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-10 col-sm-10">
-                <h4 class="text-white text-center mb-4"><strong>Recruiter Page</strong></h4>
+                <h4 class="text-white text-center mb-4"><strong>Recruiter's Page</strong></h4>
             </div>
             <div class="col-10 col-md-4">
                 <div class="card bg-secondary mt-3 mb-3 card-left">
@@ -43,17 +43,17 @@
                 <div class="card bg-secondary mt-3 mb-3 card-right">
                     <div class="card-header bg-dark text-white text-center"><strong><small>Existing User?</small> SignIn</strong></div>
                     <div class="card-body">
-                        <form action="" method="">
+                        <form action="config/rl_actions.php" method="POST">
                             <div class="form-group mt-3 mb-3">
-                                <label for="r_username" class="text-white">Username:</label>
-                                <input type="text" class="form-control" id="r_username" name="r_username" placeholder="Your username/Email!">
+                                <label for="rl_username" class="text-white">Username:</label>
+                                <input type="text" class="form-control" id="rl_username" name="rl_username" placeholder="Your username/Email!">
                             </div>
                             <div class="form-group mt-3 mb-3">
-                                <label for="r_password" class="text-white">Password:</label>
-                                <input type="password" class="form-control" id="r_password" name="r_password" placeholder="Password.">
+                                <label for="rl_password" class="text-white">Password:</label>
+                                <input type="password" class="form-control" id="rl_password" name="rl_password" placeholder="Password.">
                             </div>
                             <div class="form-group text-center mb-0">
-                                <button type="submit" name="r_submit" class="btn btn-info"><strong>SignIn!</strong></button>
+                                <button type="submit" name="rl_submit" class="btn btn-info"><strong>SignIn!</strong></button>
                             </div>
                         </form>
                     </div>

@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-10 col-sm-10">
-                <h4 class="text-white text-center mb-4"><strong>Student Page</strong></h4>
+                <h4 class="text-white text-center mb-4"><strong>Student's Page</strong></h4>
             </div>
             <div class="col-10 col-md-4">
                 <div class="card bg-secondary mt-3 mb-3 card-left">
