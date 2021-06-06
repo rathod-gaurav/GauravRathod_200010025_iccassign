@@ -61,9 +61,39 @@
 
                 <?php 
                 
-                    
+                    $query = "SELECT * FROM student_database";
+
+                    $result = mysqli_query($conn, $query);
+
+                    $applicants = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
                 ?>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <th class="text-left">Applicants and their details</th>
+                            <th>&nbsp;</th>
+                        </thead>
+                        <tbody class="text-white">
+                            <?php foreach($applicants as $applicant){ ?>
+                                <?php if($applicant['appliedFor'] == 1){ ?>
+                                    
+                                    <tr>
+                                        <th><?php echo $applicant['s_fullname']; ?></th>
+                                        <td><?php echo $applicant['s_email']; ?></td>
+                                    </tr>
+
+                                <?php } ?>
+
+
+                            <?php } ?>
+                        </tbody>
+                    
+                    </table>
+                    
+                    
+                </div>    
 
             </div>
             <div class="col-10 col-md-3 order-md-first">

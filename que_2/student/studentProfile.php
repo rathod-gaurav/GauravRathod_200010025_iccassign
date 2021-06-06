@@ -61,7 +61,7 @@
                                         <td><?php echo $row['s_email']; ?></td>
                                     </tr>
                                     <tr>
-                                        <th>Registered on</th>
+                                        <th>Registration date and time</th>
                                         <td><?php echo $row['s_created_at']; ?></td>
                                     </tr>
                                 </tbody>

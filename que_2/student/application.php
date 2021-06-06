@@ -4,6 +4,7 @@
 
     include('../config/jobsDBconnection.php');
 
+
 ?>
 
 <?php 
@@ -51,7 +52,7 @@
                                 <h6 class="card-subtitle mt-2 text-muted">Requirements: </h6><p class="card-text"><?php echo htmlspecialchars($row['job_requirements']); ?></p>
                             </div>
                             <div class="card-footer card-action">
-                                <a href="#" class="card-link">Upload Resume/CV</a>
+                                
                             </div>
                         </div>
 
@@ -90,7 +91,7 @@
                                         <td><?php echo $row['s_email']; ?></td>
                                     </tr>
                                     <tr>
-                                        <th>Registered on</th>
+                                        <th>Registration date and time</th>
                                         <td><?php echo $row['s_created_at']; ?></td>
                                     </tr>
                                 </tbody>
@@ -102,6 +103,16 @@
                     }
 
                         ?>
+
+                <form action="apply.php?id=<?php echo $id; ?>" method="POST" enctype="multipart/form-data">
+                    <div class="form-group text-left mt-3 mb-3">
+                        <label for="resume" class="text-white mr-3">Upload Resume</label>
+                        <input type="file" name="file" id="resume">
+                    </div>
+                    <div class="form-group text-right">
+                        <button type="submit" name="applynow" class="btn btn-success"><strong>Apply Now!</strong></button>
+                    </div>
+                </form>
 
 
             </div>
