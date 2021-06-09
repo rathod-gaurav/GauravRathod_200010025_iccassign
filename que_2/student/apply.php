@@ -67,7 +67,7 @@
 
                     while($row = mysqli_fetch_array($query_run)){ ?>
                         <?php
-                        $sql = "UPDATE student_database SET appliedFor=TRUE WHERE s_email='".$email."'"; 
+                        $sql = "UPDATE student_database SET appliedFor=$job_id WHERE s_email='".$email."'"; 
                         if(mysqli_query($conn, $sql)){
                             //success
                             header("Location: ../studenthomepage.php?applicationSuccess");

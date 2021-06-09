@@ -77,7 +77,7 @@
                         </thead>
                         <tbody class="text-white">
                             <?php foreach($applicants as $applicant){ ?>
-                                <?php if($applicant['appliedFor'] == 1){ ?>
+                                <?php if($applicant['appliedFor'] == $id){ ?>
                                     
                                     <tr>
                                         <th><?php echo $applicant['s_fullname']; ?></th>
